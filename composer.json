@@ -48,7 +48,7 @@
         "jasonmccreary/laravel-test-assertions": "^2.0",
         "laravel-shift/factory-generator": "dev-master",
         "laravel/pint": "^1.6",
-        "laravel/sail": "^1.21.2",
+        "laravel/sail": "^1.21",
         "mockery/mockery": "^1.5.1",
         "nunomaduro/collision": "^6.4",
         "pestphp/pest": "^1.22.5",
