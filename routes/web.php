@@ -263,7 +263,6 @@ Route::group(['middleware' => 'language'], function (): void {
                 Route::get('/create', [App\Http\Controllers\TicketController::class, 'create'])->name('create');
                 Route::post('/store', [App\Http\Controllers\TicketController::class, 'store'])->name('store');
                 Route::get('/{id}', [App\Http\Controllers\TicketController::class, 'show'])->where('id', '[0-9]+')->name('show');
-                Route::get('/{id}/edit', [App\Http\Controllers\TicketController::class, 'edit'])->name('edit');
                 Route::patch('/{id}/update', [App\Http\Controllers\TicketController::class, 'update'])->name('update');
                 Route::delete('/{id}/destroy', [App\Http\Controllers\TicketController::class, 'destroy'])->name('destroy');
                 Route::post('/{id}/assign', [App\Http\Controllers\TicketController::class, 'assign'])->name('assign');
@@ -352,7 +351,6 @@ Route::group(['middleware' => 'language'], function (): void {
         Route::get('/subscriptions', [App\Http\Controllers\ForumController::class, 'subscriptions'])->name('forum_subscriptions');
         Route::get('/latest/topics', [App\Http\Controllers\ForumController::class, 'latestTopics'])->name('forum_latest_topics');
         Route::get('/latest/posts', [App\Http\Controllers\ForumController::class, 'latestPosts'])->name('forum_latest_posts');
-        Route::get('/search', [App\Http\Controllers\ForumController::class, 'search'])->name('forum_search_form');
 
         Route::group(['prefix' => 'topics'], function (): void {
             Route::get('/forum/{id}/new-topic', [App\Http\Controllers\TopicController::class, 'addForm'])->name('forum_new_topic_form');
@@ -471,11 +469,6 @@ Route::group(['middleware' => 'language'], function (): void {
             Route::get('/', [App\Http\Controllers\User\EarningController::class, 'index'])->name('index');
         });
 
-        // Filters
-        Route::group(['prefix' => 'users'], function (): void {
-            Route::post('/{username}/userFilters', [App\Http\Controllers\User\UserController::class, 'myFilter'])->name('myfilter');
-        });
-
         // Gifts
         Route::group(['prefix' => 'users/{username}/gifts', 'as' => 'gifts.'], function (): void {
             Route::get('/', [App\Http\Controllers\User\GiftController::class, 'index'])->name('index');
@@ -493,7 +486,6 @@ Route::group(['middleware' => 'language'], function (): void {
 
         // Notifications
         Route::group(['prefix' => 'notifications', 'as' => 'notifications.'], function (): void {
-            Route::get('/filter', [App\Http\Controllers\User\NotificationController::class, 'faceted']);
             Route::get('/', [App\Http\Controllers\User\NotificationController::class, 'index'])->name('index');
             Route::post('/{id}/update', [App\Http\Controllers\User\NotificationController::class, 'update'])->name('update');
             Route::post('/updateall', [App\Http\Controllers\User\NotificationController::class, 'updateAll'])->name('updateall');
