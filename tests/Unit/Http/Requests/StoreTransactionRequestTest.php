@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\StoreTransactionRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\StoreTransactionRequest();
+    $this->subject = new StoreTransactionRequest();
 });
 
 test('authorize', function (): void {

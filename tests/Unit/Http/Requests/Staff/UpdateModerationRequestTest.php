@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateModerationRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateModerationRequest();
+    $this->subject = new UpdateModerationRequest();
 });
 
 test('authorize', function (): void {

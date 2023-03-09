@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreChatRoomRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreChatRoomRequest();
+    $this->subject = new StoreChatRoomRequest();
 });
 
 test('authorize', function (): void {

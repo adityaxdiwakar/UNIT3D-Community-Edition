@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateBonExchangeRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateBonExchangeRequest();
+    $this->subject = new UpdateBonExchangeRequest();
 });
 
 test('authorize', function (): void {

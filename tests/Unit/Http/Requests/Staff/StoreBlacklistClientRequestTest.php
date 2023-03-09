@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreBlacklistClientRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreBlacklistClientRequest();
+    $this->subject = new StoreBlacklistClientRequest();
 });
 
 test('authorize', function (): void {

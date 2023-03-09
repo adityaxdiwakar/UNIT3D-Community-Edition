@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreMediaLanguageRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreMediaLanguageRequest();
+    $this->subject = new StoreMediaLanguageRequest();
 });
 
 test('authorize', function (): void {

@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreDistributorRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreDistributorRequest();
+    $this->subject = new StoreDistributorRequest();
 });
 
 test('authorize', function (): void {

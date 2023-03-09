@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreMassActionRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreMassActionRequest();
+    $this->subject = new StoreMassActionRequest();
 });
 
 test('authorize', function (): void {

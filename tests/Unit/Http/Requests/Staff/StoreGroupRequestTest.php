@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreGroupRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreGroupRequest();
+    $this->subject = new StoreGroupRequest();
 });
 
 test('authorize', function (): void {

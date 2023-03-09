@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateInternalRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateInternalRequest();
+    $this->subject = new UpdateInternalRequest();
 });
 
 test('authorize', function (): void {

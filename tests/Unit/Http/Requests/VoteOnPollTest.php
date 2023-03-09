@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\VoteOnPoll;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\VoteOnPoll();
+    $this->subject = new VoteOnPoll();
 });
 
 test('authorize', function (): void {

@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreTypeRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreTypeRequest();
+    $this->subject = new StoreTypeRequest();
 });
 
 test('authorize', function (): void {

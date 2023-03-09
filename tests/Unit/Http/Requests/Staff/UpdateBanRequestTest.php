@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateBanRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateBanRequest();
+    $this->subject = new UpdateBanRequest();
 });
 
 test('authorize', function (): void {

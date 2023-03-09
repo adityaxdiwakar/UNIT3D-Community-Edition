@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateTypeRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateTypeRequest();
+    $this->subject = new UpdateTypeRequest();
 });
 
 test('authorize', function (): void {

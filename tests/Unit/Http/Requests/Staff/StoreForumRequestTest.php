@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreForumRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreForumRequest();
+    $this->subject = new StoreForumRequest();
 });
 
 test('authorize', function (): void {

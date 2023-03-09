@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateBlacklistClientRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateBlacklistClientRequest();
+    $this->subject = new UpdateBlacklistClientRequest();
 });
 
 test('authorize', function (): void {

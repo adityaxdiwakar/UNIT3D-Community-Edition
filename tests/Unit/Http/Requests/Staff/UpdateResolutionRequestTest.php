@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateResolutionRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateResolutionRequest();
+    $this->subject = new UpdateResolutionRequest();
 });
 
 test('authorize', function (): void {

@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateCategoryRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateCategoryRequest();
+    $this->subject = new UpdateCategoryRequest();
 });
 
 test('authorize', function (): void {

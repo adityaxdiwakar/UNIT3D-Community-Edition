@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateRssRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateRssRequest();
+    $this->subject = new UpdateRssRequest();
 });
 
 test('authorize', function (): void {

@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreWatchedUserRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreWatchedUserRequest();
+    $this->subject = new StoreWatchedUserRequest();
 });
 
 test('authorize', function (): void {

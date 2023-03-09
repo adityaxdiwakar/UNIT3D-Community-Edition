@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateDistributorRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateDistributorRequest();
+    $this->subject = new UpdateDistributorRequest();
 });
 
 test('authorize', function (): void {

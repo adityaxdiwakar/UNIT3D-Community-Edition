@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreGiftRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreGiftRequest();
+    $this->subject = new StoreGiftRequest();
 });
 
 test('authorize', function (): void {

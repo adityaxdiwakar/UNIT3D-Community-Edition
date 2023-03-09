@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\StorePoll;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\StorePoll();
+    $this->subject = new StorePoll();
 });
 
 test('authorize', function (): void {

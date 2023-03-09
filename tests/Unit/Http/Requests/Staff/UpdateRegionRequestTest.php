@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateRegionRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateRegionRequest();
+    $this->subject = new UpdateRegionRequest();
 });
 
 test('authorize', function (): void {

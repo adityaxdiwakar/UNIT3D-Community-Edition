@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\UpdateChatBotRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\UpdateChatBotRequest();
+    $this->subject = new UpdateChatBotRequest();
 });
 
 test('authorize', function (): void {

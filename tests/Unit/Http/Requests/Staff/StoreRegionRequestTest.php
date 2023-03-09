@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreRegionRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreRegionRequest();
+    $this->subject = new StoreRegionRequest();
 });
 
 test('authorize', function (): void {

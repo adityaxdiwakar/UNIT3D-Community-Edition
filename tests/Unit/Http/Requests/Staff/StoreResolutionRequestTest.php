@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreResolutionRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreResolutionRequest();
+    $this->subject = new StoreResolutionRequest();
 });
 
 test('authorize', function (): void {

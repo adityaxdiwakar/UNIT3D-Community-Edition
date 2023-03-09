@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Requests\Staff\StoreRssRequest;
+
 beforeEach(function (): void {
-    $this->subject = new \App\Http\Requests\Staff\StoreRssRequest();
+    $this->subject = new StoreRssRequest();
 });
 
 test('authorize', function (): void {
