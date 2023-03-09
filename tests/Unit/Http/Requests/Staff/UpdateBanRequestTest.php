@@ -20,4 +20,3 @@ test('rules', function (): void {
         'group_id'     => 'required|integer|exists:groups,id',
     ], $actual);
 });
-

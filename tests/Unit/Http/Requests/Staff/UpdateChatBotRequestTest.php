@@ -27,4 +27,3 @@ test('rules', function (): void {
         'about'    => 'sometimes|max:9999',
     ], $actual);
 });
-

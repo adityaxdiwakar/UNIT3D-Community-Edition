@@ -19,4 +19,3 @@ test('rules', function (): void {
         'ban_reason' => 'required|string|max:65536',
     ], $actual);
 });
-

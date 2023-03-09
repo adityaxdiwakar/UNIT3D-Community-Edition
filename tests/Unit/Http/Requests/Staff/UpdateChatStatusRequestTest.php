@@ -21,4 +21,3 @@ test('rules', function (): void {
         'icon'  => 'required',
     ], $actual);
 });
-

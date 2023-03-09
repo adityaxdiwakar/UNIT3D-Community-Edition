@@ -47,4 +47,3 @@ test('rules', function (): void {
         'dead'            => 'sometimes|boolean',
     ], $actual);
 });
-

@@ -21,4 +21,3 @@ test('rules', function (): void {
         'message'    => 'required_if:status,2,3|string',
     ], $actual);
 });
-

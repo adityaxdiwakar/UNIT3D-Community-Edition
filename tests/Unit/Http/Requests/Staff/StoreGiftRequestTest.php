@@ -22,4 +22,3 @@ test('rules', function (): void {
         'fl_tokens' => 'required|integer|min:0',
     ], $actual);
 });
-

@@ -39,4 +39,3 @@ test('messages', function (): void {
         'to_username.not_in' => 'You cannot gift yourself',
     ], $actual);
 });
-

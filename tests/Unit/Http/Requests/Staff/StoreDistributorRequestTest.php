@@ -20,4 +20,3 @@ test('rules', function (): void {
         'position' => 'required',
     ], $actual);
 });
-

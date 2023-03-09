@@ -23,4 +23,3 @@ test('rules', function (): void {
         ],
     ], $actual);
 });
-

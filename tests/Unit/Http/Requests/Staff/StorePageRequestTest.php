@@ -20,4 +20,3 @@ test('rules', function (): void {
         'content' => 'required|string',
     ], $actual);
 });
-

@@ -41,4 +41,3 @@ test('messages', function (): void {
 
     $this->assertEquals([], $actual);
 });
-

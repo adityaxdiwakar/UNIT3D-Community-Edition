@@ -28,4 +28,3 @@ test('rules', function (): void {
         'permissions.*.start_topic' => 'sometimes|boolean',
     ], $actual);
 });
-

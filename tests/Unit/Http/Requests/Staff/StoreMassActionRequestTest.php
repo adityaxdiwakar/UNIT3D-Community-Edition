@@ -20,4 +20,3 @@ test('rules', function (): void {
         'message' => 'required|string|max:65536',
     ], $actual);
 });
-

@@ -20,4 +20,3 @@ test('rules', function (): void {
         'reason' => 'sometimes|string',
     ], $actual);
 });
-

@@ -36,4 +36,3 @@ test('rules', function (): void {
         'autogroup'        => 'required|boolean',
     ], $actual);
 });
-

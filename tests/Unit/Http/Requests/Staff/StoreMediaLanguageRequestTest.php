@@ -20,4 +20,3 @@ test('rules', function (): void {
         'code' => 'required|string|unique:media_languages',
     ], $actual);
 });
-

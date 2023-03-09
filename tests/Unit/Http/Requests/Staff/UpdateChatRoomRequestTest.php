@@ -19,4 +19,3 @@ test('rules', function (): void {
         'name' => 'required|string|max:255',
     ], $actual);
 });
-

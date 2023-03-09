@@ -23,4 +23,3 @@ test('rules', function (): void {
         'image'    => 'max:10240',
     ], $actual);
 });
-

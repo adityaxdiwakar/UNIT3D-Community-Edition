@@ -19,4 +19,3 @@ test('rules', function (): void {
         'message' => 'required|string',
     ], $actual);
 });
-

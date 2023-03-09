@@ -22,4 +22,3 @@ test('rules', function (): void {
         'type'        => 'required|string|in:upload,download,personal_freeleech,invite|exclude',
     ], $actual);
 });
-

@@ -29,4 +29,3 @@ test('rules', function (): void {
         'forum_type'                => 'in:category,forum',
     ], $actual);
 });
-

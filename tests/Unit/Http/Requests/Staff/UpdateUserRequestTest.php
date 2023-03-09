@@ -26,4 +26,3 @@ test('rules', function (): void {
         'internal_id' => 'nullable|exists:internals,id',
     ], $actual);
 });
-

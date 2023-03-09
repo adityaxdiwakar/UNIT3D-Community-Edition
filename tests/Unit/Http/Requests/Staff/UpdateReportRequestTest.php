@@ -19,4 +19,3 @@ test('rules', function (): void {
         'verdict' => 'required|min:3',
     ], $actual);
 });
-
