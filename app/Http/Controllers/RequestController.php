@@ -124,7 +124,7 @@ class RequestController extends Controller
     /**
      * Store A New Torrent Request.
      */
-    public function addrequest(Request $request): \Illuminate\Http\RedirectResponse
+    public function addRequest(Request $request): \Illuminate\Http\RedirectResponse
     {
         $user = $request->user();
 
@@ -228,7 +228,7 @@ class RequestController extends Controller
     /**
      * Edit A Torrent Request.
      */
-    public function editrequest(Request $request, int $id): \Illuminate\Http\RedirectResponse
+    public function editRequest(Request $request, int $id): \Illuminate\Http\RedirectResponse
     {
         $user = $request->user();
         $torrentRequest = TorrentRequest::findOrFail($id);
