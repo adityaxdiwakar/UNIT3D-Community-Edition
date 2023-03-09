@@ -45,16 +45,17 @@
     "require-dev": {
         "brianium/paratest": "^6.9.1",
         "fakerphp/faker": "^1.21",
+        "jasonmccreary/laravel-test-assertions": "^2.0",
+        "laravel-shift/factory-generator": "dev-master",
         "laravel/pint": "^1.6",
         "laravel/sail": "^1.21.2",
         "mockery/mockery": "^1.5.1",
         "nunomaduro/collision": "^6.4",
         "pestphp/pest": "^1.22.5",
         "pestphp/pest-plugin-laravel": "^1.4",
+        "pestphp/pest-plugin-parallel": "^1.2",
         "phpunit/phpunit": "^9.6.4",
-        "spatie/laravel-ignition": "^2.0",
-        "jasonmccreary/laravel-test-assertions": "^2.0",
-        "laravel-shift/factory-generator": "dev-master"
+        "spatie/laravel-ignition": "^2.0"
     },
     "config": {
         "preferred-install": "dist",
